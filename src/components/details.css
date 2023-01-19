@@ -1,0 +1,28 @@
+.projects-href {
+    display: flex;
+    flex-direction: column;
+}
+
+.href {
+    text-decoration-style: dotted;
+    margin-bottom: 10px;
+    color: rgb(233, 233, 233);
+    font-weight: 100;
+}
+.href:hover {
+    text-decoration: none;
+    color:aqua;
+    font-size: 25px;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+    border: 2px solid aqua;
+    width: 45%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.projectDetails{
+    font-size: 19px;
+    color: rgb(233, 233, 233);
+    font-weight: 100;
+}
