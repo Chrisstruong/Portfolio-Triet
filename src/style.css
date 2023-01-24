@@ -1,7 +1,17 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+}
 section {
 	display: flex;
 	min-height: 100vh;
 	background-color: rgb(78, 45, 118);
+	background-color: rgba(104, 54, 154, 0.77);
 	color: white;
 	font-weight: bolder;
 	font-family: 'Titillium Web', sans-serif;
@@ -18,7 +28,7 @@ section {
 }
 
 .recent-work{
-	margin-top: 80px;
+	margin-top: 50px;
 	margin-bottom: 30px;
 	font-size: 40px;
 }
@@ -71,15 +81,42 @@ section {
 }
 
 .project3-div {
-	border-top: 2px solid rgba(255, 255, 255, 0.713);
+	border-top: 2px solid rgb(255, 255, 255);
 	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+.details{
+	display: flex;
+}
+
+.project-description{
+	font-size: 19px;
+}
+
+.additional-details{
+	color: rgb(233, 233, 233);
+	cursor: pointer;
+	font-style: italic;
+	font-size: 17px;
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: underline dotted;
+
+}
+.additional-details:hover{
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	background-color: rgb(255, 216, 133);
+	border-radius: 30px;
+	text-decoration: underline dotted;
 }
 
 .project3 {
 	display: flex;
 	justify-content: space-between;
-	margin: 20px 10px 20px 10px;
-	cursor: pointer;
+	margin: 70px 10px 20px 10px;
 }
 
 .project3-giphy {
@@ -89,14 +126,13 @@ section {
 }
 
 .project-title {
+	text-align: center;
 	font-size: 35px;
 	color: rgb(233, 233, 233);
 	margin-left: 31%;
+	width: 32%;
 }
-.decoration-container{
-	display: flex;
-	cursor: pointer;
-}
+
 .decoration{
 	margin-left: 10px;
 	border: 1px solid white;
@@ -160,14 +196,16 @@ section {
 .LinkedIn-image {
 	width: 63px;
 	color: rgb(247, 151, 125);
+	color: rgb(255, 216, 133);
 	height: auto;
 }
 
 .LinkedIn-image:hover{
 	color: aqua;
-	width: 80px;
-	border: 2px solid white;
-	border-radius: 50%;
+	width: 90px;
+	/* border: 2px solid white;
+	border-radius: 50%; */
+	border-bottom: 5px solid white;
 	transition-duration: 1s;
 	text-shadow: 2px 2px;
 }

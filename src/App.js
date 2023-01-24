@@ -12,9 +12,11 @@ import Project2Details from './components/Project2Details';
 import Project2Image from './gif/project2.png'
 import Project2Giphy from './gif/project2.gif'
 import ReactPlayer from 'react-player';
+import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 
 
 function App() {
+  const introProject3 = "MovieBuff is a web app that allows users to rate and review the most action-packed and sweaty movies from the 80's and 90's"
   const [visibleDetails3, setVisibleDetails3] = useState(false)
   const [visibleDetails2, setVisibleDetails2] = useState(false)
 
@@ -44,15 +46,17 @@ function App() {
             <h2 className='recent-work'>Recent work <span className='click-for-details'>(click for details)</span></h2>
 
             <div className='project3-div'>
-              <div className='project3' onClick={handleClick3}>
+              <div className='project3'>
                 <img src={Project3Image} alt="project3" className='project3-giphy' />
                 <img src={Project3Giphy} alt="project3" className='project3-giphy' />
               </div>
-              <div className='decoration-container' onClick={handleClick3}>
-                <h2 className='project-title'>MovieBuff</h2>
-                <h1 className='decoration'></h1>
+              <div className='decoration-container'>
+                <h2 className='project-title'>MOVIEBUFF</h2>
+                <p className='project-description'>MovieBuff is a web app that allows users to rate and review the most action-packed and sweaty movies from the 80's and 90's <span onClick={handleClick3} className='additional-details'>{visibleDetails3 ? "Show Less" : "Show More"}</span>
+                </p>
+                {visibleDetails3 ? <Project3Details /> : ""}
               </div>
-              {visibleDetails3 ? <Project3Details /> : ""}
+              {/* {visibleDetails3 ? <Project3Details /> : ""} */}
             </div>
 
             <div className='project3-div'>
