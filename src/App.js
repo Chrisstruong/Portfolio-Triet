@@ -13,27 +13,43 @@ import Project2Image from './gif/project2.png'
 import Project2Giphy from './gif/project2.gif'
 import ReactPlayer from 'react-player';
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
+import { Switch, Space } from "antd"
 
 
 function App() {
-  const introProject3 = "MovieBuff is a web app that allows users to rate and review the most action-packed and sweaty movies from the 80's and 90's"
+  const [gradientOrAnimation, setGradientOrAnimation] = useState(true)
   const [visibleDetails3, setVisibleDetails3] = useState(false)
   const [visibleDetails2, setVisibleDetails2] = useState(false)
 
+  const handClickGOrA = () => {
+    setGradientOrAnimation(!gradientOrAnimation)
+  }
   const handleClick3 = () => {
     setVisibleDetails3(!visibleDetails3)
   }
   const handleClick2 = () => {
     setVisibleDetails2(!visibleDetails2)
   }
-  
+
+
 
   return (
     <section>
       <div class="left">
         <div class="inner sticky">
           <div className="spline-image">
-            <Spline scene="https://prod.spline.design/15qcazqJfYoVXrms/scene.splinecode" />
+            <div className='form-box'>
+              <div className='button-box'>
+                <Switch 
+                onClick = {handClickGOrA}
+                defaultChecked="true"
+                checkedChildren="3D"
+                unCheckedChildren="2D" />
+              </div>
+
+            </div>
+            {gradientOrAnimation ? <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
+: <Spline scene="https://prod.spline.design/15qcazqJfYoVXrms/scene.splinecode" />}
           </div>
         </div>
       </div>
@@ -60,15 +76,17 @@ function App() {
             </div>
 
             <div className='project3-div'>
-              <div className='project3' onClick={handleClick2}>
+              <div className='project3'>
                 <img src={Project2Image} alt="project3" className='project3-giphy' />
                 <img src={Project2Giphy} alt="project3" className='project3-giphy' />
               </div>
-              <div className='decoration-container' onClick={handleClick2}>
-                <h2 className='project-title'>BreedBeauty</h2>
-                <h1 className='decoration2'></h1>
+              <div className='decoration-container'>
+                <h2 className='project-title'>BREEDBEAUTY</h2>
+                <p className='project-description'>Sometimes people just want to see photos of cute dogs. Zach and Triet app's mission is to solve the problem of by allowing the user to randomly generate a photo of a dog from a group of over 1000 dog photos.<span onClick={handleClick2} className='additional-details'>{visibleDetails2 ? "Show Less" : "Show More"}</span>
+                </p>
+                {visibleDetails2 ? <Project2Details /> : ""}
               </div>
-              {visibleDetails2 ? <Project2Details /> : ""}
+              {/* {visibleDetails3 ? <Project3Details /> : ""} */}
             </div>
 
             <div className='hard-skills'>

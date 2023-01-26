@@ -99,7 +99,7 @@ section {
 	cursor: pointer;
 	font-style: italic;
 	font-size: 17px;
-	margin-left: 5px;
+	margin-left: 3px;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-decoration: underline dotted;
@@ -209,3 +209,16 @@ section {
 	transition-duration: 1s;
 	text-shadow: 2px 2px;
 }
+
+.form-box{
+	position: relative;
+}
+.button-box {
+	position: absolute;
+	right:0;
+}
+.switch:after {
+	background-color: yellow;
+}
+
+ 
