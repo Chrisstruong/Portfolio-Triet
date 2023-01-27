@@ -119,10 +119,16 @@ section {
 	margin: 70px 10px 20px 10px;
 }
 
+.project3-image{
+	border-radius: 20px;
+	height: auto;
+	width:58%
+}
+
 .project3-giphy {
 	border-radius: 20px;
 	height: auto;
-	width: 48%;
+	width: 40%;
 }
 
 .project-title {

@@ -11,6 +11,7 @@ import Project3Image from './gif/Project3Image.png'
 import Project2Details from './components/Project2Details';
 import Project2Image from './gif/project2.png'
 import Project2Giphy from './gif/project2.gif'
+import project22 from './gif/project22.png'
 import ReactPlayer from 'react-player';
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 import { Switch, Space } from "antd"
@@ -41,7 +42,7 @@ function App() {
             <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
             {/* {gradientOrAnimation ? <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
 : <Spline scene="https://prod.spline.design/15qcazqJfYoVXrms/scene.splinecode" />} */}
-           
+
             {/* <div className='form-box'>
             <div className='button-box'>
               <Switch 
@@ -65,7 +66,7 @@ function App() {
 
             <div className='project3-div'>
               <div className='project3'>
-                <img src={Project3Image} alt="project3" className='project3-giphy' />
+                <img src={Project3Image} alt="project3" className='project3-image' />
                 <img src={Project3Giphy} alt="project3" className='project3-giphy' />
               </div>
               <div className='decoration-container'>
@@ -79,7 +80,7 @@ function App() {
 
             <div className='project3-div'>
               <div className='project3'>
-                <img src={Project2Image} alt="project3" className='project3-giphy' />
+                <img src={project22} alt="project3" className='project3-image' />
                 <img src={Project2Giphy} alt="project3" className='project3-giphy' />
               </div>
               <div className='decoration-container'>
@@ -95,6 +96,7 @@ function App() {
               <h2 className='hard-skill-title'>Hard skills</h2>
               <div className='hard-skills-content'>
                 <div className="languages">
+                  <h4>Languages</h4>
                   <p>JavaScript</p>
                   <p>Python</p>
                   <p>Java</p>
@@ -102,6 +104,7 @@ function App() {
                   <p>HTML</p>
                 </div>
                 <div className='Libraries-and-Frameworks'>
+                  <h4>Libraries | Frameworks</h4>
                   <p>React</p>
                   <p>Express</p>
                   <p>Flask</p>
@@ -110,6 +113,7 @@ function App() {
                   <p>Bootstrap</p>
                 </div>
                 <div className='DataBase'>
+                  <h4>Database</h4>
                   <p>MongoDB</p>
                   <p>Mongoose</p>
                 </div>
