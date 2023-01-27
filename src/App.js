@@ -121,7 +121,7 @@ function App() {
             </div>
 
             <h2 className='methology'>Methologies</h2>
-            <p className='methology-content'>Agile / Scrum | Object Oriented Programming | MVC Pattern | Test-Driven Development | Responsive Design | Authentication (OAuth/Sesssions/Tokens) | CRUD Operations | RESTful Routing</p>
+            <p className='methology-content'>Object Oriented Programming | Responsive Design | Authentication (JWT) | CRUD Operations | RESTful Routing</p>
             <div className='get-in-touch'>
               <h2 className='contact'>Get in touch</h2>
               <p className='methology-content'>Please do not hesitate to reach out.</p>
