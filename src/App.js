@@ -14,7 +14,7 @@ import Project2Giphy from './gif/project2.gif'
 import ReactPlayer from 'react-player';
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 import { Switch, Space } from "antd"
-
+import gradient from './gif/gradients.gif'
 
 function App() {
   const [gradientOrAnimation, setGradientOrAnimation] = useState(true)
@@ -38,18 +38,20 @@ function App() {
       <div class="left">
         <div class="inner sticky">
           <div className="spline-image">
-            <div className='form-box'>
-              <div className='button-box'>
-                <Switch 
-                onClick = {handClickGOrA}
-                defaultChecked="true"
-                checkedChildren="3D"
-                unCheckedChildren="2D" />
-              </div>
-
+            <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
+            {/* {gradientOrAnimation ? <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
+: <Spline scene="https://prod.spline.design/15qcazqJfYoVXrms/scene.splinecode" />} */}
+           
+            {/* <div className='form-box'>
+            <div className='button-box'>
+              <Switch 
+              onClick = {handClickGOrA}
+              defaultChecked="true"
+              checkedChildren="3D"
+              unCheckedChildren="2D" />
             </div>
-            {gradientOrAnimation ? <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
-: <Spline scene="https://prod.spline.design/15qcazqJfYoVXrms/scene.splinecode" />}
+
+            </div> */}
           </div>
         </div>
       </div>
