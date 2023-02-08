@@ -101,7 +101,7 @@ function App() {
                 <img src={Project2Giphy} alt="project3" className='project3-giphy' />
               </div>
               <div className='decoration-container'>
-                <h2 className='project-title'>BREED BEAUTY</h2>
+                <h2 className='project-title'>BREED_BEAUTY</h2>
                 <p className='project-description'>Sometimes people just want to see photos of cute dogs. Zach and Triet app's mission is to solve the problem of by allowing the user to randomly generate a photo of a dog from a group of over 1000 dog photos.<span onClick={handleClick2} className='additional-details'>{visibleDetails2 ? "Show Less" : "Show More"}</span>
                 </p>
                 {visibleDetails2 ? <Project2Details /> : ""}
