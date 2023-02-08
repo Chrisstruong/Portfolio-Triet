@@ -12,6 +12,9 @@ import Project2Details from './components/Project2Details';
 import Project2Image from './gif/project2.png'
 import Project2Giphy from './gif/project2.gif'
 import project22 from './gif/project22.png'
+import capstone from './gif/Capstone.gif'
+import Capstone from './gif/Capstone.png'
+import CapstoneDetail from './components/CapstoneDetail'
 import ReactPlayer from 'react-player';
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 import { Switch, Space } from "antd"
@@ -66,6 +69,20 @@ function App() {
 
             <div className='project3-div'>
               <div className='project3'>
+                <img src={Capstone} alt="project3" className='project3-image' />
+                <img src={capstone} alt="project3" className='project3-giphy' />
+              </div>
+              <div className='decoration-container'>
+                <h2 className='project-title'>SEI1031_GRADUATES</h2>
+                <p className='project-description'>SEI1031_GRADUATES is a chat app that allows SEI1031 cohort to keep in touch after graduation <span onClick={handleClick3} className='additional-details'>{visibleDetails3 ? "Show Less" : "Show More"}</span>
+                </p>
+                {visibleDetails3 ? <CapstoneDetail /> : ""}
+              </div>
+              {/* {visibleDetails3 ? <Project3Details /> : ""} */}
+            </div>
+
+            <div className='project3-div'>
+              <div className='project3'>
                 <img src={Project3Image} alt="project3" className='project3-image' />
                 <img src={Project3Giphy} alt="project3" className='project3-giphy' />
               </div>
@@ -84,7 +101,7 @@ function App() {
                 <img src={Project2Giphy} alt="project3" className='project3-giphy' />
               </div>
               <div className='decoration-container'>
-                <h2 className='project-title'>BREEDBEAUTY</h2>
+                <h2 className='project-title'>BREED BEAUTY</h2>
                 <p className='project-description'>Sometimes people just want to see photos of cute dogs. Zach and Triet app's mission is to solve the problem of by allowing the user to randomly generate a photo of a dog from a group of over 1000 dog photos.<span onClick={handleClick2} className='additional-details'>{visibleDetails2 ? "Show Less" : "Show More"}</span>
                 </p>
                 {visibleDetails2 ? <Project2Details /> : ""}
