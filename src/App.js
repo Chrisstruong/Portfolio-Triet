@@ -22,11 +22,16 @@ import gradient from './gif/gradients.gif'
 
 function App() {
   const [gradientOrAnimation, setGradientOrAnimation] = useState(true)
+  const [visibleDetailCapstone, setVisibleDetailCapstone] = useState(false)
   const [visibleDetails3, setVisibleDetails3] = useState(false)
   const [visibleDetails2, setVisibleDetails2] = useState(false)
+  
 
   const handClickGOrA = () => {
     setGradientOrAnimation(!gradientOrAnimation)
+  }
+  const handleClickCapstone = () => {
+    setVisibleDetailCapstone(!visibleDetailCapstone)
   }
   const handleClick3 = () => {
     setVisibleDetails3(!visibleDetails3)
@@ -74,9 +79,9 @@ function App() {
               </div>
               <div className='decoration-container'>
                 <h2 className='project-title'>SEI1031_GRADUATES</h2>
-                <p className='project-description'>SEI1031_GRADUATES is a chat app that allows SEI1031 cohort to keep in touch after graduation <span onClick={handleClick3} className='additional-details'>{visibleDetails3 ? "Show Less" : "Show More"}</span>
+                <p className='project-description'>SEI1031_GRADUATES is a chat app that allows SEI1031 cohort to keep in touch after graduation <span onClick={handleClickCapstone} className='additional-details'>{visibleDetailCapstone ? "Show Less" : "Show More"}</span>
                 </p>
-                {visibleDetails3 ? <CapstoneDetail /> : ""}
+                {visibleDetailCapstone ? <CapstoneDetail /> : ""}
               </div>
               {/* {visibleDetails3 ? <Project3Details /> : ""} */}
             </div>
@@ -126,8 +131,8 @@ function App() {
                   <p>Express</p>
                   <p>Flask</p>
                   <p>Django</p>
-                  <p>Bulma</p>
                   <p>Bootstrap</p>
+                  <p>Sass</p>
                 </div>
                 <div className='DataBase'>
                   <h4>Database</h4>
@@ -143,10 +148,10 @@ function App() {
               <h2 className='contact'>Get in touch</h2>
               <p className='methology-content'>Please do not hesitate to reach out.</p>
               <div className='social-media-list'>
-                <a href="https://www.linkedin.com/in/swi-triettruong" className='LinkedIn'>{<AiFillLinkedin className='LinkedIn-image' />}</a>
-                <a href="https://github.com/Chrisstruong" className='GitHub LinkedIn'>{<AiFillGithub className='GitHub LinkedIn-image' />}</a>
-                <a href="https://docs.google.com/document/d/1Oi_YwtveNt5_83QAcfDuzq-cNprtO5hrHK6VwlgJA2c/edit" className='Document LinkedIn'>{<HiOutlineDocument className='Document LinkedIn-image' />}</a>
-                <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=Triet.truongse@gmail.com&hl=en-US" className='Email LinkedIn'>{<HiOutlineMail className='Email LinkedIn-image' />}</a>
+                <a href="https://www.linkedin.com/in/swi-triettruong" className='LinkedIn' target="_blank">{<AiFillLinkedin className='LinkedIn-image' />}</a>
+                <a href="https://github.com/Chrisstruong" className='GitHub LinkedIn' target="_blank">{<AiFillGithub className='GitHub LinkedIn-image' />}</a>
+                <a href="https://docs.google.com/document/d/1Oi_YwtveNt5_83QAcfDuzq-cNprtO5hrHK6VwlgJA2c/edit" className='Document LinkedIn' target="_blank">{<HiOutlineDocument className='Document LinkedIn-image' />}</a>
+                <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=Triet.truongse@gmail.com&hl=en-US" className='Email LinkedIn' target="_blank">{<HiOutlineMail className='Email LinkedIn-image' />}</a>
               </div>
             </div>
           </div>
