@@ -67,7 +67,7 @@ function App() {
 
       <div class="right">
         <div class="inner">
-          <h1 className='title'>Triet Truong</h1>
+          <h1 className='title'>Triet Truong - <br/> Software Engineer</h1>
           <p id='brand-statement'>I am a solutions-driven software engineer with a sharp, analytical mind who is highly motivated by challenge. My aptitude for digesting and implementing new technologies makes me both efficient when given a clear task, and exceptionally versatile when faced with ambiguity or road blocks.</p>
           <div className='second-main-part'>
             <h2 className='recent-work'>Recent work <span className='click-for-details'>(click for details)</span></h2>
