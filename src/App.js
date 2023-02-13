@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './style.css';
 import Spline from '@splinetool/react-spline';
 import { useState } from 'react';
@@ -9,23 +8,19 @@ import { HiOutlineDocument } from "react-icons/hi2";
 import Project3Giphy from './gif/Project3Giphy.gif'
 import Project3Image from './gif/Project3Image.png'
 import Project2Details from './components/Project2Details';
-import Project2Image from './gif/project2.png'
 import Project2Giphy from './gif/project2.gif'
 import project22 from './gif/project22.png'
 import capstone from './gif/Capstone.gif'
 import Capstone from './gif/Capstone.png'
 import CapstoneDetail from './components/CapstoneDetail'
-import ReactPlayer from 'react-player';
-import { FiArrowDown, FiArrowUp } from "react-icons/fi";
-import { Switch, Space } from "antd"
-import gradient from './gif/gradients.gif'
+
 
 function App() {
   const [gradientOrAnimation, setGradientOrAnimation] = useState(true)
   const [visibleDetailCapstone, setVisibleDetailCapstone] = useState(false)
   const [visibleDetails3, setVisibleDetails3] = useState(false)
   const [visibleDetails2, setVisibleDetails2] = useState(false)
-  
+
 
   const handClickGOrA = () => {
     setGradientOrAnimation(!gradientOrAnimation)
@@ -48,26 +43,13 @@ function App() {
         <div class="inner sticky">
           <div className="spline-image">
             <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
-            {/* {gradientOrAnimation ? <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
-: <Spline scene="https://prod.spline.design/15qcazqJfYoVXrms/scene.splinecode" />} */}
-
-            {/* <div className='form-box'>
-            <div className='button-box'>
-              <Switch 
-              onClick = {handClickGOrA}
-              defaultChecked="true"
-              checkedChildren="3D"
-              unCheckedChildren="2D" />
-            </div>
-
-            </div> */}
           </div>
         </div>
       </div>
 
       <div class="right">
         <div class="inner">
-          <h1 className='title'>Triet Truong - <br/> Software Engineer</h1>
+          <h1 className='title'>Triet Truong - <br /> Software Engineer</h1>
           <p id='brand-statement'>I am a solutions-driven software engineer with a sharp, analytical mind who is highly motivated by challenge. My aptitude for digesting and implementing new technologies makes me both efficient when given a clear task, and exceptionally versatile when faced with ambiguity or road blocks.</p>
           <div className='second-main-part'>
             <h2 className='recent-work'>Recent work <span className='click-for-details'>(click for details)</span></h2>
@@ -120,42 +102,42 @@ function App() {
                 <div className="languages">
                   <h4>Languages</h4>
                   <div className='sub-languages'>
-                  <p class="animate-charcter">JavaScript</p>
-                  <p class="animate-charcter">Python</p>
-                  <p>Java</p>
-                  <p>Pascal</p>
-                  <p>HTML5</p>
-                  <p>CSS3</p>
+                    <p class="animate-charcter">JavaScript</p>
+                    <p class="animate-charcter">Python</p>
+                    <p>Java</p>
+                    <p>Pascal</p>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
                   </div>
                 </div>
                 <div className='Libraries-and-Frameworks'>
                   <h4 id="libraries-h4">Libraries | Frameworks</h4>
                   <div className='sub-libraries-frameworks'>
-                  <div className='lib-frame1'>
-                  <p class="animate-charcter">React</p>
-                  <p>Express</p>
-                  <p>Node.js</p>
-                  <p>Flask</p>
-                  <p>Mongoose</p>
-                  <p>Passport</p>
-                  </div>
-                  <div className='lib-frame2'>
-                  <p class="animate-charcter">Django</p>
-                  <p>Socket.io</p>
-                  <p>JWT</p>
-                  <p>Bootstrap</p>
-                  <p>Flexbox</p>
-                  <p>Sass</p>
-                  </div>
+                    <div className='lib-frame1'>
+                      <p class="animate-charcter">React</p>
+                      <p>Express</p>
+                      <p>Node.js</p>
+                      <p>Flask</p>
+                      <p>Mongoose</p>
+                      <p>Passport</p>
+                    </div>
+                    <div className='lib-frame2'>
+                      <p class="animate-charcter">Django</p>
+                      <p>Socket.io</p>
+                      <p>JWT</p>
+                      <p>Bootstrap</p>
+                      <p>Flexbox</p>
+                      <p>Sass</p>
+                    </div>
                   </div>
                 </div>
 
                 <div className='DataBase'>
                   <h4>Database</h4>
                   <div className='sub-database'>
-                  <p class="animate-charcter">MongoDB</p>
-                  <p>PostgreSQL</p>
-                  <p>MySQL</p>
+                    <p class="animate-charcter">MongoDB</p>
+                    <p>PostgreSQL</p>
+                    <p>MySQL</p>
                   </div>
                 </div>
               </div>
