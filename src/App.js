@@ -119,31 +119,50 @@ function App() {
               <div className='hard-skills-content'>
                 <div className="languages">
                   <h4>Languages</h4>
-                  <p>JavaScript</p>
-                  <p>Python</p>
+                  <div className='sub-languages'>
+                  <p class="animate-charcter">JavaScript</p>
+                  <p class="animate-charcter">Python</p>
                   <p>Java</p>
                   <p>Pascal</p>
-                  <p>HTML</p>
+                  <p>HTML5</p>
+                  <p>CSS3</p>
+                  </div>
                 </div>
                 <div className='Libraries-and-Frameworks'>
-                  <h4>Libraries | Frameworks</h4>
-                  <p>React</p>
+                  <h4 id="libraries-h4">Libraries | Frameworks</h4>
+                  <div className='sub-libraries-frameworks'>
+                  <div className='lib-frame1'>
+                  <p class="animate-charcter">React</p>
                   <p>Express</p>
+                  <p>Node.js</p>
                   <p>Flask</p>
-                  <p>Django</p>
+                  <p>Mongoose</p>
+                  <p>Passport</p>
+                  </div>
+                  <div className='lib-frame2'>
+                  <p class="animate-charcter">Django</p>
+                  <p>Socket.io</p>
+                  <p>JWT</p>
                   <p>Bootstrap</p>
+                  <p>Flexbox</p>
                   <p>Sass</p>
+                  </div>
+                  </div>
                 </div>
+
                 <div className='DataBase'>
                   <h4>Database</h4>
-                  <p>MongoDB</p>
-                  <p>Mongoose</p>
+                  <div className='sub-database'>
+                  <p class="animate-charcter">MongoDB</p>
+                  <p>PostgreSQL</p>
+                  <p>MySQL</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <h2 className='methology'>Methologies</h2>
-            <p className='methology-content'>Object Oriented Programming | Responsive Design | Authentication (JWT) | CRUD Operations | RESTful Routing</p>
+            <p className='methology-content'>Object Oriented Programming | Responsive Design | Authentication (JWT) | CRUD Operations | RESTful Routing | Test-Driven Development</p>
             <div className='get-in-touch'>
               <h2 className='contact'>Get in touch</h2>
               <p className='methology-content'>Please do not hesitate to reach out.</p>
