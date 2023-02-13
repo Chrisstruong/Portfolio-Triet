@@ -27,5 +27,8 @@
     color: rgb(233, 233, 233);
     font-weight: 100;
     transition: width 2s, height 4s;
+}
 
+.rfewf{
+    background-color: rgb(209, 73, 73);
 }
