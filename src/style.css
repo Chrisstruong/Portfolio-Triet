@@ -255,10 +255,10 @@ section {
 .animate-charcter {
 	text-transform: uppercase;
 	background-image: linear-gradient(-225deg,
-			#e0b1ff 0%,
-			#050505 29%,
-			#bf98e9 67%,
-			rgb(238, 194, 248) 100%);
+			#b7cdff 0%,
+			#ffdc2a 29%,
+			#5468dc 67%,
+			rgb(181, 218, 253) 100%);
 	background-size: auto auto;
 	background-clip: border-box;
 	background-size: 200% auto;
@@ -267,7 +267,7 @@ section {
 	text-fill-color: transparent;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: textclip 8s linear infinite;
+	animation: textclip 10s linear infinite;
 	font-size: 19px;
 }
 
