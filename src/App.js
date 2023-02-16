@@ -151,7 +151,7 @@ function App() {
               <div className='social-media-list'>
                 <a href="https://www.linkedin.com/in/swi-triettruong" className='LinkedIn' target="_blank">{<AiFillLinkedin className='LinkedIn-image' />}</a>
                 <a href="https://github.com/Chrisstruong" className='GitHub LinkedIn' target="_blank">{<AiFillGithub className='GitHub LinkedIn-image' />}</a>
-                <a href="https://docs.google.com/document/d/1Oi_YwtveNt5_83QAcfDuzq-cNprtO5hrHK6VwlgJA2c/edit" className='Document LinkedIn' target="_blank">{<HiOutlineDocument className='Document LinkedIn-image' />}</a>
+                <a href="https://docs.google.com/document/d/1Oi_YwtveNt5_83QAcfDuzq-cNprtO5hrHK6VwlgJA2c/edit?usp=sharing" className='Document LinkedIn' target="_blank">{<HiOutlineDocument className='Document LinkedIn-image' />}</a>
                 <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=Triet.truongse@gmail.com&hl=en-US" className='Email LinkedIn' target="_blank">{<HiOutlineMail className='Email LinkedIn-image' />}</a>
               </div>
             </div>
