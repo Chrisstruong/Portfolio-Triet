@@ -289,21 +289,48 @@ section {
 	section {
 		display: flex;
 		flex-direction: column;
-		width: 390px;
+		width: 430px;
 	}
 
 	.right .inner {
 		padding: 40px;
 		font-size: 22px;
 	}
-	.inner.sticky{
+
+	.inner.sticky {
 		height: 400px;
 		border-bottom: 5px solid black;
 	}
+
 	.title {
 		font-size: 38.5px;
 	}
-	#brand-statement{
+
+	#brand-statement {
 		font-size: 18px;
+		margin-bottom: 30px;
+		color: rgb(233, 233, 233);
+		font-weight: 100;
+	}
+
+	.recent-work {
+		font-size: 25px;
+	}
+
+	.click-for-details {
+		font-size: 18px;
+		color: rgb(233, 233, 233);
+		font-weight: 300;
+		font-style: italic;
+	}
+	.project3-div {
+		border-top: 2px solid rgb(255, 255, 255);
+		/* margin-bottom: 20px; */
+		/* margin-top: 100px; */
+	}
+	.project3-image {
+		border-radius: 20px;
+		height: auto;
+		width: 58%;
 	}
 }
