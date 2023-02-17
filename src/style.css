@@ -221,7 +221,6 @@ section {
 
 .LinkedIn-image {
 	width: 63px;
-	color: rgb(247, 151, 125);
 	color: rgb(255, 216, 133);
 	height: auto;
 }
@@ -373,6 +372,20 @@ section {
 	
 	.animate-charcter{
 		font-size: 15px;
+	}
+	.methology{
+		font-size: 25px;
+	}
+	.methology-content{
+		font-size: 15px;
+	}
+	.contact{
+		font-size: 25px;
+	}
+	.LinkedIn-image {
+		width: 50px;
+		color: rgb(255, 216, 133);
+		height: auto;
 	}
 
 }
