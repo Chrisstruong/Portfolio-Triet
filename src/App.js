@@ -42,7 +42,9 @@ function App() {
       <div class="left">
         <div class="inner sticky">
           <div className="spline-image">
-            <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode"/>
+            {/* <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode"/> */}
+            {/* <Spline scene="https://my.spline.design/gradient-ec5a516a7797a2defedc0d0ffeac09f2/"/> */}
+            <iframe src='https://my.spline.design/gradient-ec5a516a7797a2defedc0d0ffeac09f2/' frameborder='0' width='100%' height='100%'></iframe>
           </div>
         </div>
       </div>
