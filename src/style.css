@@ -355,4 +355,24 @@ section {
 		border-radius: 30px;
 		text-decoration: underline dotted;
 	}
+
+	.hard-skill-title {
+		font-size: 25px;
+	}
+
+	.hard-skills-content {
+		font-size: 15px;
+	}
+
+	.sub-languages {
+		margin-top: 35px;
+	}
+	.sub-database{
+		margin-top: 35px;
+	}
+	
+	.animate-charcter{
+		font-size: 15px;
+	}
+
 }
