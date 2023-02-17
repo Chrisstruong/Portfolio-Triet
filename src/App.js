@@ -42,7 +42,7 @@ function App() {
       <div class="left">
         <div class="inner sticky">
           <div className="spline-image">
-            <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode"/>
           </div>
         </div>
       </div>

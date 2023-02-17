@@ -279,7 +279,31 @@ section {
 
 
 
+@media all and (max-width:500px) {
 
+	html,
+	body {
+		overflow-x: hidden;
+	}
 
+	section {
+		display: flex;
+		flex-direction: column;
+		width: 390px;
+	}
 
-
+	.right .inner {
+		padding: 40px;
+		font-size: 22px;
+	}
+	.inner.sticky{
+		height: 400px;
+		border-bottom: 5px solid black;
+	}
+	.title {
+		font-size: 38.5px;
+	}
+	#brand-statement{
+		font-size: 18px;
+	}
+}
