@@ -281,10 +281,10 @@ section {
 
 @media all and (max-width:500px) {
 
-	html,
+	/* html,
 	body {
 		overflow-x: hidden;
-	}
+	} */
 	html {
 		overflow: hidden;
 		height: 100%;
@@ -292,6 +292,7 @@ section {
 	
 	body {
 		overflow: auto;
+		overflow-x: hidden;
 		height: 100%;
 	}
 
