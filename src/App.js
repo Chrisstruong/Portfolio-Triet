@@ -1,6 +1,6 @@
 import './style.css';
 import Spline from '@splinetool/react-spline';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Project3Details from './components/Project3Details';
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
@@ -36,7 +36,8 @@ function App() {
   }
 
 
-
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
+  const windowSizeCheck = windowSize.current[0] >= 500
   return (
     <section>
       <div class="left">
@@ -44,7 +45,10 @@ function App() {
           <div className="spline-image">
             {/* <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode"/> */}
             {/* <Spline scene="https://my.spline.design/gradient-ec5a516a7797a2defedc0d0ffeac09f2/"/> */}
-            <iframe src='https://my.spline.design/gradient-ec5a516a7797a2defedc0d0ffeac09f2/' frameborder='0' width='100%' height='100%'></iframe>
+            {windowSizeCheck
+            ? <iframe src='https://my.spline.design/gradient-ec5a516a7797a2defedc0d0ffeac09f2/' frameborder='0' width='100%' height='100%'></iframe>
+            : <iframe src='https://my.spline.design/gradient12promax-e041ce601a2d932ea3228deddcaf2ba7/' frameborder='0' width='100%' height='100%'></iframe>}
+            
           </div>
         </div>
       </div>
