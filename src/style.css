@@ -285,6 +285,15 @@ section {
 	body {
 		overflow-x: hidden;
 	}
+	html {
+		overflow: hidden;
+		height: 100%;
+	}
+	
+	body {
+		overflow: auto;
+		height: 100%;
+	}
 
 	section {
 		display: flex;
