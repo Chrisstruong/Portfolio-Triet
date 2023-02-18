@@ -81,7 +81,7 @@ function App() {
               </div>
               <div className='decoration-container'>
 
-                <a href="https://sei-1031.netlify.app/" target="_blank" className='project-title' onClick={()=>setPreviewLink(true)} onMouseEnter={()=>setPreviewLink(true)} onMouseLeave={()=>setPreviewLink(false)}>SEI1031_GRADUATES</a>
+                <a href="https://sei-1031.netlify.app/" target="_blank" className='project-title'  onMouseEnter={()=>setPreviewLink(true)} onMouseLeave={()=>setPreviewLink(false)}>SEI1031_GRADUATES</a>
                 {previewLink ?
                   <div className='preview-container'>
                     <div className='link-container'>
