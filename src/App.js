@@ -57,10 +57,9 @@ function App() {
       <div class="left">
         <div class="inner sticky">
           <div className="spline-image">
-            {/* <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode"/> */}
             {/* <Spline scene="https://my.spline.design/gradient-ec5a516a7797a2defedc0d0ffeac09f2/"/> */}
             {windowSizeCheck
-              ? <iframe src='https://my.spline.design/gradient-ec5a516a7797a2defedc0d0ffeac09f2/' frameborder='0' width='100%' height='100%'></iframe>
+              ? <Spline scene="https://prod.spline.design/YzuLLwr1Dp3RmGw1/scene.splinecode" />
               : <iframe src='https://my.spline.design/gradient12promax-e041ce601a2d932ea3228deddcaf2ba7/' frameborder='0' width='100%' height='100%'></iframe>}
 
           </div>
@@ -81,7 +80,7 @@ function App() {
               </div>
               <div className='decoration-container'>
 
-                <a href="https://sei-1031.netlify.app/" target="_blank" className='project-title'  onMouseEnter={()=>setPreviewLink(true)} onMouseLeave={()=>setPreviewLink(false)}>SEI1031_GRADUATES</a>
+                <a href="https://sei-1031.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink(true)} onMouseLeave={() => setPreviewLink(false)}>SEI1031_GRADUATES</a>
                 {previewLink ?
                   <div className='preview-container'>
                     <div className='link-container'>
@@ -106,7 +105,7 @@ function App() {
               </div>
               <div className='decoration-container'>
 
-                <a href="https://movie-buff-movie.netlify.app/" target="_blank" className='project-title' onMouseEnter={()=>setPreviewLink2(true)} onMouseLeave={()=>setPreviewLink2(false)}>MOVIEBUFF</a>
+                <a href="https://movie-buff-movie.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink2(true)} onMouseLeave={() => setPreviewLink2(false)}>MOVIEBUFF</a>
                 {previewLink2 ?
                   <div className='preview-container'>
                     <div className='link-container2'>
@@ -131,7 +130,7 @@ function App() {
               </div>
               <div className='decoration-container'>
 
-                <a href="https://breed-beauty.netlify.app/" target="_blank" className='project-title' onMouseEnter={()=>setPreviewLink3(true)} onMouseLeave={()=>setPreviewLink3(false)}>BREED_BEAUTY</a>
+                <a href="https://breed-beauty.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink3(true)} onMouseLeave={() => setPreviewLink3(false)}>BREED_BEAUTY</a>
                 {previewLink3 ?
                   <div className='preview-container'>
                     <div className='link-container3'>
