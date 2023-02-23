@@ -195,7 +195,7 @@ function App() {
               </div>
             </div>
 
-            <h2 className='methology'>Methologies</h2>
+            <h2 className='methology'>Methodologies</h2>
             <p className='methology-content'>Object Oriented Programming | Responsive Design | Authentication (JWT) | CRUD Operations | RESTful Routing | Test-Driven Development</p>
             <div className='get-in-touch'>
               <h2 className='contact'>Get in touch</h2>
