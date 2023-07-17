@@ -143,6 +143,7 @@ section {
 	margin-left: 31%;
 	width: 32%;
 	text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
 }
 .project-title:hover {
 	text-decoration: underline;
@@ -288,7 +289,7 @@ section {
 .link-container {
 	background-color: white;
 	color: rgb(78, 45, 118);
-	width: 105%;
+	width: 103%;
 	border-radius: 20px;
 }
 
@@ -305,7 +306,7 @@ section {
 .link-container2 {
 	background-color: white;
 	color: rgb(78, 45, 118);
-	width: 105%;
+	width: 102%;
 	border-radius: 20px;
 }
 .project3-image-preview2{
@@ -317,7 +318,7 @@ section {
 .link-container3 {
 	background-color: white;
 	color: rgb(78, 45, 118);
-	width: 105%;
+	width: 103%;
 	border-radius: 20px;
 }
 .project3-image-preview3{
