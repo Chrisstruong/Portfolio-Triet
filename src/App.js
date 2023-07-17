@@ -75,33 +75,8 @@ function App() {
 
             <div className='project3-div'>
               <div className='project3'>
-                <img src={Capstone} alt="project3" className='project3-image' />
-                <img src={capstone} alt="project3" className='project3-giphy' />
-              </div>
-              <div className='decoration-container'>
-
-                <a href="https://sei-1031.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink(true)} onMouseLeave={() => setPreviewLink(false)}>SEI1031_GRADUATES</a>
-                {previewLink ?
-                  <div className='preview-container'>
-                    <div className='link-container'>
-                      <IoIosLink />
-                      <a href="https://sei-1031.netlify.app/" target="_blank" onClick={() => setPreviewLink(false)}>Go to: https://sei-1031.netlify.app/</a>
-                    </div>
-                    <img src={Capstone} className='project3-image-preview' alt="" />
-                  </div>
-                  : ""}
-
-                <p className='project-description'>SEI1031_GRADUATES is a chat app that allows SEI1031 cohort to keep in touch after graduation <span onClick={handleClickCapstone} className='additional-details'>{visibleDetailCapstone ? "Show Less" : "Show More"}</span>
-                </p>
-                {visibleDetailCapstone ? <CapstoneDetail /> : ""}
-              </div>
-              {/* {visibleDetails3 ? <Project3Details /> : ""} */}
-            </div>
-
-            <div className='project3-div'>
-              <div className='project3'>
                 <img src={Project3Image} alt="project3" className='project3-image' />
-                <img src={Project3Giphy} alt="project3" className='project3-giphy' />
+                {/* <img src={Project3Giphy} alt="project3" className='project3-giphy' /> */}
               </div>
               <div className='decoration-container'>
 
@@ -125,8 +100,35 @@ function App() {
 
             <div className='project3-div'>
               <div className='project3'>
+                <img src={Capstone} alt="project3" className='project3-image' />
+                {/* <img src={capstone} alt="project3" className='project3-giphy' /> */}
+              </div>
+              <div className='decoration-container'>
+
+                <a href="https://sei-1031.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink(true)} onMouseLeave={() => setPreviewLink(false)}>SEI1031_GRADUATES</a>
+                {previewLink ?
+                  <div className='preview-container'>
+                    <div className='link-container'>
+                      <IoIosLink />
+                      <a href="https://sei-1031.netlify.app/" target="_blank" onClick={() => setPreviewLink(false)}>Go to: https://sei-1031.netlify.app/</a>
+                    </div>
+                    <img src={Capstone} className='project3-image-preview' alt="" />
+                  </div>
+                  : ""}
+
+                <p className='project-description'>SEI1031_GRADUATES is a chat app that allows SEI1031 cohort to keep in touch after graduation <span onClick={handleClickCapstone} className='additional-details'>{visibleDetailCapstone ? "Show Less" : "Show More"}</span>
+                </p>
+                {visibleDetailCapstone ? <CapstoneDetail /> : ""}
+              </div>
+              {/* {visibleDetails3 ? <Project3Details /> : ""} */}
+            </div>
+
+
+
+            <div className='project3-div'>
+              <div className='project3'>
                 <img src={project22} alt="project3" className='project3-image' />
-                <img src={Project2Giphy} alt="project3" className='project3-giphy' />
+                {/* <img src={Project2Giphy} alt="project3" className='project3-giphy' /> */}
               </div>
               <div className='decoration-container'>
 
@@ -155,7 +157,7 @@ function App() {
                   <h4>Languages</h4>
                   <div className='sub-languages'>
                     <p class="animate-charcter">JavaScript</p>
-                    <p class="animate-charcter">Python</p>
+                    <p>Python</p>
                     <p>Java</p>
                     <p>Pascal</p>
                     <p>HTML5</p>
@@ -166,7 +168,7 @@ function App() {
                   <h4 id="libraries-h4">Libraries | Frameworks</h4>
                   <div className='sub-libraries-frameworks'>
                     <div className='lib-frame1'>
-                      <p class="animate-charcter">React</p>
+                      <p>React</p>
                       <p>Express</p>
                       <p>Node.js</p>
                       <p>Flask</p>
@@ -174,7 +176,7 @@ function App() {
                       <p>Passport</p>
                     </div>
                     <div className='lib-frame2'>
-                      <p class="animate-charcter">Django</p>
+                      <p>Django</p>
                       <p>Socket.io</p>
                       <p>JWT</p>
                       <p>Bootstrap</p>
@@ -187,7 +189,7 @@ function App() {
                 <div className='DataBase'>
                   <h4>Database</h4>
                   <div className='sub-database'>
-                    <p class="animate-charcter">MongoDB</p>
+                    <p>MongoDB</p>
                     <p>PostgreSQL</p>
                     <p>MySQL</p>
                   </div>
