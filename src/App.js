@@ -87,7 +87,7 @@ function App() {
                       <IoIosLink />
                       <a href="https://movie-buff-movie.netlify.app/" target="_blank" onClick={() => setPreviewLink2(false)}>Go to: https://movie-buff-movie.netlify.app/</a>
                     </div>
-                    <img src={Project3Image} className='project3-image-preview2' alt="" />
+                    {/* <img src={Project3Image} className='project3-image-preview2' alt="" /> */}
                   </div>
                   : ""}
 
@@ -112,7 +112,7 @@ function App() {
                       <IoIosLink />
                       <a href="https://sei-1031.netlify.app/" target="_blank" onClick={() => setPreviewLink(false)}>Go to: https://sei-1031.netlify.app/</a>
                     </div>
-                    <img src={Capstone} className='project3-image-preview' alt="" />
+                    {/* <img src={Capstone} className='project3-image-preview' alt="" /> */}
                   </div>
                   : ""}
 
@@ -139,7 +139,7 @@ function App() {
                       <IoIosLink />
                       <a href="https://breed-beauty.netlify.app/" target="_blank" onClick={() => setPreviewLink3(false)}>Go to: https://breed-beauty.netlify.app/</a>
                     </div>
-                    <img src={project22} className='project3-image-preview3' alt="" />
+                    {/* <img src={project22} className='project3-image-preview3' alt="" /> */}
                   </div>
                   : ""}
 
