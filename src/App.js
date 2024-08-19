@@ -15,6 +15,7 @@ import capstone from './gif/Capstone.gif'
 import Capstone from './gif/Capstone.png'
 import CapstoneDetail from './components/CapstoneDetail'
 import { IoIosLink } from "react-icons/io";
+import project1 from "./gif/Project1.png"
 
 
 function App() {
@@ -68,10 +69,27 @@ function App() {
 
       <div class="right">
         <div class="inner">
-          <h1 className='title'>Triet Truong - <br /> Software Engineer</h1>
-          <p id='brand-statement'>I am a solutions-driven software engineer with a sharp, analytical mind who is highly motivated by challenge. My aptitude for digesting and implementing new technologies makes me both efficient when given a clear task, and exceptionally versatile when faced with ambiguity or road blocks.</p>
+          <h1 className='title'>Triet Truong - <br /> Web Developer</h1>
+          <p id='brand-statement'>I am a solutions-driven web developer with a sharp, analytical mind who is highly motivated by challenge. My aptitude for digesting and implementing new technologies makes me both efficient when given a clear task, and exceptionally versatile when faced with ambiguity or road blocks.</p>
           <div className='second-main-part'>
             <h2 className='recent-work'>Recent work <span className='click-for-details'>(click title for live link)</span></h2>
+
+            <div className='project3-div'>
+              <div className='project3'>
+                <img src={project1} alt="project3" className='project3-image' />
+                {/* <img src={Project2Giphy} alt="project3" className='project3-giphy' /> */}
+              </div>
+              <div className='decoration-container'>
+
+                <a href="https://main--jovial-moonbeam-def838.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink3(true)} onMouseLeave={() => setPreviewLink3(false)}>UnsplashCollection</a>
+
+
+                <p className='project-description'>Application allows users to search for images using the Unsplash API<span onClick={handleClick2} className='additional-details'>{visibleDetails2 ? "Show Less" : "Show More"}</span>
+                </p>
+                {visibleDetails2 ? <Project2Details /> : ""}
+              </div>
+              {/* {visibleDetails3 ? <Project3Details /> : ""} */}
+            </div>
 
             <div className='project3-div'>
               <div className='project3'>
@@ -81,15 +99,7 @@ function App() {
               <div className='decoration-container'>
 
                 <a href="https://movie-buff-movie.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink2(true)} onMouseLeave={() => setPreviewLink2(false)}>MOVIEBUFF</a>
-                {previewLink2 ?
-                  <div className='preview-container'>
-                    <div className='link-container2'>
-                      <IoIosLink />
-                      <a href="https://movie-buff-movie.netlify.app/" target="_blank" onClick={() => setPreviewLink2(false)}>Go to: https://movie-buff-movie.netlify.app/</a>
-                    </div>
-                    {/* <img src={Project3Image} className='project3-image-preview2' alt="" /> */}
-                  </div>
-                  : ""}
+
 
                 <p className='project-description'>MovieBuff is a web app that allows users to rate and review the most action-packed and sweaty movies from the 80's and 90's <span onClick={handleClick3} className='additional-details'>{visibleDetails3 ? "Show Less" : "Show More"}</span>
                 </p>
@@ -97,6 +107,7 @@ function App() {
               </div>
               {/* {visibleDetails3 ? <Project3Details /> : ""} */}
             </div>
+
 
             <div className='project3-div'>
               <div className='project3'>
@@ -106,15 +117,7 @@ function App() {
               <div className='decoration-container'>
 
                 <a href="https://sei-1031.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink(true)} onMouseLeave={() => setPreviewLink(false)}>SEI1031_GRADUATES</a>
-                {previewLink ?
-                  <div className='preview-container'>
-                    <div className='link-container'>
-                      <IoIosLink />
-                      <a href="https://sei-1031.netlify.app/" target="_blank" onClick={() => setPreviewLink(false)}>Go to: https://sei-1031.netlify.app/</a>
-                    </div>
-                    {/* <img src={Capstone} className='project3-image-preview' alt="" /> */}
-                  </div>
-                  : ""}
+
 
                 <p className='project-description'>SEI1031_GRADUATES is a chat app that allows SEI1031 cohort to keep in touch after graduation <span onClick={handleClickCapstone} className='additional-details'>{visibleDetailCapstone ? "Show Less" : "Show More"}</span>
                 </p>
@@ -123,32 +126,6 @@ function App() {
               {/* {visibleDetails3 ? <Project3Details /> : ""} */}
             </div>
 
-
-
-            <div className='project3-div'>
-              <div className='project3'>
-                <img src={project22} alt="project3" className='project3-image' />
-                {/* <img src={Project2Giphy} alt="project3" className='project3-giphy' /> */}
-              </div>
-              <div className='decoration-container'>
-
-                <a href="https://breed-beauty.netlify.app/" target="_blank" className='project-title' onMouseEnter={() => setPreviewLink3(true)} onMouseLeave={() => setPreviewLink3(false)}>BREED_BEAUTY</a>
-                {previewLink3 ?
-                  <div className='preview-container'>
-                    <div className='link-container3'>
-                      <IoIosLink />
-                      <a href="https://breed-beauty.netlify.app/" target="_blank" onClick={() => setPreviewLink3(false)}>Go to: https://breed-beauty.netlify.app/</a>
-                    </div>
-                    {/* <img src={project22} className='project3-image-preview3' alt="" /> */}
-                  </div>
-                  : ""}
-
-                <p className='project-description'>Sometimes people just want to see photos of cute dogs. Zach and Triet app's mission is to solve the problem of by allowing the user to randomly generate a photo of a dog from a group of over 1000 dog photos.<span onClick={handleClick2} className='additional-details'>{visibleDetails2 ? "Show Less" : "Show More"}</span>
-                </p>
-                {visibleDetails2 ? <Project2Details /> : ""}
-              </div>
-              {/* {visibleDetails3 ? <Project3Details /> : ""} */}
-            </div>
 
             <div className='hard-skills'>
               <h2 className='hard-skill-title'>Hard skills</h2>
@@ -159,7 +136,6 @@ function App() {
                     <p class="animate-charcter">JavaScript</p>
                     <p>Python</p>
                     <p>Java</p>
-                    <p>Pascal</p>
                     <p>HTML5</p>
                     <p>CSS3</p>
                   </div>
@@ -169,15 +145,14 @@ function App() {
                   <div className='sub-libraries-frameworks'>
                     <div className='lib-frame1'>
                       <p>React</p>
+
                       <p>Express</p>
-                      <p>Node.js</p>
-                      <p>Flask</p>
+                      <p>Socket.io</p>
                       <p>Mongoose</p>
                       <p>Passport</p>
                     </div>
                     <div className='lib-frame2'>
-                      <p>Django</p>
-                      <p>Socket.io</p>
+                      <p>Tailwind</p>
                       <p>JWT</p>
                       <p>Bootstrap</p>
                       <p>Flexbox</p>
@@ -189,6 +164,7 @@ function App() {
                 <div className='DataBase'>
                   <h4>Database</h4>
                   <div className='sub-database'>
+                    <p>Flask</p>
                     <p>MongoDB</p>
                     <p>PostgreSQL</p>
                     <p>MySQL</p>
@@ -205,7 +181,7 @@ function App() {
               <div className='social-media-list'>
                 <a href="https://www.linkedin.com/in/swi-triettruong" className='LinkedIn' target="_blank">{<AiFillLinkedin className='LinkedIn-image' />}</a>
                 <a href="https://github.com/Chrisstruong" className='GitHub LinkedIn' target="_blank">{<AiFillGithub className='GitHub LinkedIn-image' />}</a>
-                <a href="https://docs.google.com/document/d/10Rbh3C7AES5lMHC95nKJ49NwbwgQU098__2nrwt-BHE/edit?usp=sharing" className='Document LinkedIn' target="_blank">{<HiOutlineDocument className='Document LinkedIn-image' />}</a>
+                <a href="https://docs.google.com/document/d/1keu4p-oVeFAztK331gfr6BdASOdE4hweC-BXrfzqPYE/edit?usp=sharing" className='Document LinkedIn' target="_blank">{<HiOutlineDocument className='Document LinkedIn-image' />}</a>
                 <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=Triet.truongse@gmail.com&hl=en-US" className='Email LinkedIn' target="_blank">{<HiOutlineMail className='Email LinkedIn-image' />}</a>
               </div>
             </div>
